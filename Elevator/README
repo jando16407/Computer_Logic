@@ -1,0 +1,27 @@
+This is a circuit implementing basic operation of an elevator in a 2-story building.
+
+The finite state machine has 1 input.
+1. enable (enables operation of elevator)
+
+There are 3 outputs.
+1. door
+2. moving
+3. current floor
+
+When the user sets the enable input, the elevator should perform the following sequence:
+*open the door for 4 secounds
+*close the door
+*move the elevator to the destination floor in 4 seconds and sisplay the current floor number using an LED
+*open the door for 4 secounds
+*close the door
+*go to idle state
+
+Some conditions are...
+*remain in the same floor if enable input is reset and repeat the sequence if the enable input is set
+*the elevator will complete the sequence if enable signal is reset in the middle of the sequence
+*assume that the clock frequency is 4 Hz
+
+On the circuit,
+*LED on the bottom left shows the state of the door. On=open, Off=close
+*LED on the bottom middle shows if the elevator is moving or not. On=moving, Off=idle
+*LED on the bottom right shows which floor the elevator is at. On=1st floor, Off=2nd floor
