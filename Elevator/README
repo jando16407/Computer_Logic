@@ -1,6 +1,6 @@
 This is a circuit implementing basic operation of an elevator in a 2-story building.
 ***To use elevator_function.circ, please use Logisim. It's a free logic simulator software from www.cburch.com/logisim/
-
+ 
 The finite state machine has 1 input.
 1. enable (enables operation of elevator)
 
